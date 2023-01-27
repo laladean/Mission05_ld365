@@ -1,0 +1,13 @@
+﻿body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+label {
+    color: darkseagreen;
+}
+
+
+img {
+    width: 25%;
+    height: 25%;
+}
