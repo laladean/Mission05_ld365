@@ -8,34 +8,50 @@
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Lauren Dean</h1>
-    <img id="pct" src="img/pct.jpg" />
-    <br />
-    <p>I love strongly-typed languages and I hope to gain more experience in a C language again. I am also super passionate about building websites so hopefully this class will teach me how to do that in a more efficient way than in previous classes. I also hope that I don't cry as much during the semester or INTEX!!'</p>
-    <br />
-    <p></p>
-    <ol>
-        <li>Project Manager</li>
-        <li>UX/UI Designer</li>
-        <li>Software Developer</li>
-    </ol>
 
-    <h2>Grade Calculator</h2>
-    <form>
-        <label>Assignments</label>
-        <input id="assign"/><br />
-        <label>Group Projects</label>
-        <input id="proj"/><br />
-        <label>Quizzes</label>
-        <input id="quiz"/><br />
-        <label>Midterm Exam</label>
-        <input id="mid"/><br />
-        <label>Final Exam</label>
-        <input id="final"/><br />
-        <label>INTEX</label>
-        <input id="intex"/><br />
-        <input id="submit-btn" type="button" value="submit"/>
-    </form>
+    <div><h1>Lauren Dean</h1></div>
+
+    <div class="pic">
+        <img id="pct" src="img/pct.jpg" />
+        <p>Hiking the PCT with my friend Pablo!</p>
+    </div>
+    <br />
+
+    <div class="paragraph">
+        <h2>What I hope to Gain from IS413</h2>
+        <p>I love strongly-typed languages and I hope to gain more experience in a C language again. I am also super passionate about building websites so hopefully this class will teach me how to do that in a more efficient way than in previous classes. I also hope that I don't cry as much during the semester or INTEX!!'</p>
+    </div>
+    <br />
+
+    <div class="list">
+        <h3>My top 3 positions</h3>
+        <ol>
+            <li>Project Manager</li>
+            <li>UX/UI Designer</li>
+            <li>Software Developer</li>
+        </ol>
+    </div>
+
+    <div class="grade_calc">
+        <h3>Grade Calculator</h3>
+        <form>
+            <label>Assignments</label><br />
+            <input id="assign" /><br />
+            <label>Group Projects</label><br />
+            <input id="proj" /><br />
+            <label>Quizzes</label><br />
+            <input id="quiz" /><br />
+            <label>Midterm Exam</label><br />
+            <input id="mid" /><br />
+            <label>Final Exam</label><br />
+            <input id="final" /><br />
+            <label>INTEX</label><br />
+            <input id="intex" /><br />
+            <label>Final Grade: </label><br />
+            <input id="grade" type="text" value="0" /><br />
+            <input id="submit-btn" type="button" value="submit" />
+        </form>
+    </div>
 
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="lib/jquery/jquery-3.6.3.min.js"></script>

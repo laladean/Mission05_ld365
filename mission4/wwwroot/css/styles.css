@@ -1,13 +1,26 @@
 ﻿body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lavender;
 }
 
 label {
-    color: darkseagreen;
+    color:darkmagenta;
 }
 
 
 img {
-    width: 25%;
-    height: 25%;
+    width: 50%;
+    height: 50%;
+}
+
+input {
+    width:50%;
+}
+
+div {
+    margin-left: 35%;
+    margin-right: 35%;
 }
