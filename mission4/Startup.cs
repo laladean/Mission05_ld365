@@ -16,14 +16,30 @@ namespace mission4
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+            if (env.IsEnvironment("Development"))
+            {
+                app.UseDeveloperExceptionPage();
+            }
             //order matters
-            app.UseDefaultFiles(); //auto route to index.html
+          
             app.UseStaticFiles(); //access html pages
+
+            app.UseRouting();
+
+            //this is the default route
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Sub}/{action=Index}/{id?}");
+            });
         }
     }
 }

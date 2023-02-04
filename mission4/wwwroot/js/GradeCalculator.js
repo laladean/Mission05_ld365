@@ -59,6 +59,6 @@
     }
 
     //writing the final grade percentage and letter grade to the html form
-    $("#grade").attr("value", finalGrade.toString() + "%\t" + letterGrade );
+    alert("Your final grade is: " + finalGrade.toString() + "\t" + letterGrade);
 
 })
