@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace mission4.Models
 {
+    //data validation --> each entry must be between 0 and 100, the field can't be empty, and the entry must be a valid integer
     public class GradeCalcModel
     {
         [Required(ErrorMessage = "Field cannot be empty")]

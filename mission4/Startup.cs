@@ -22,7 +22,7 @@ namespace mission4
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-
+            //changed the environment to production so users don't see a nasty error page
             if (env.IsEnvironment("Development"))
             {
                 app.UseDeveloperExceptionPage();

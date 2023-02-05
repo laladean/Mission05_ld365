@@ -58,7 +58,7 @@
         letterGrade = "E";
     }
 
-    //writing the final grade percentage and letter grade to the html form
+    //returning the final grade as an alert once the form is submitted
     alert("Your final grade is: " + finalGrade.toString() + "\t" + letterGrade);
 
 })
